@@ -26,15 +26,11 @@ Route::get('/', [ListingController::class, 'index']);
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
 
-// Route::get('/hello', function () {
-//     return response('<h1>Hello World<h1>', 200) 
-//         ->header('Content-Type','text/plain');
-// });
-
-// Route::get('/posts/{id}', function($id){
-//     return response('Post '.$id);
-// })->where('id','[0-9]+');
-
-// Route::get('/search', function(Request $request){
-//     return $request->name . ' ' . $request->city;
-// });
+// Common Resource Routes:
+// index - Show all listings
+// show - Show a single listing
+// create - Show form to create a new listing
+// store - Store a new listing
+// edit - Show form to edit a listing
+// update - Update a listing
+// destroy - Delete a listing
