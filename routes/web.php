@@ -16,7 +16,14 @@ use phpDocumentor\Reflection\PseudoTypes\List_;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/* Common Resource Routes:
+// index - Show all listings
+// show - Show a single listing
+// create - Show form to create a new listing
+// store - Store a new listing
+// edit - Show form to edit a listing
+// update - Update a listing
+ destroy - Delete a listing */
 
 //All Listings
 Route::get('/', [ListingController::class, 'index']);
@@ -26,11 +33,3 @@ Route::get('/', [ListingController::class, 'index']);
 Route::get('/listings/{listing}', [ListingController::class, 'show']);
 
 
-// Common Resource Routes:
-// index - Show all listings
-// show - Show a single listing
-// create - Show form to create a new listing
-// store - Store a new listing
-// edit - Show form to edit a listing
-// update - Update a listing
-// destroy - Delete a listing
